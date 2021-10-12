@@ -49,4 +49,5 @@ h2 {
   text-shadow: 2px 2px 2px grey;
   -webkit-text-stroke: 1px black;
   color: rgb(243, 224, 237);
+  white-space: nowrap;
 }
