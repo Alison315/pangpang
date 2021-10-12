@@ -17,9 +17,7 @@ export class JokeComponent implements OnInit {
     headers:new HttpHeaders()
      .set('Accept','application/json')
      }).subscribe(data=>{
-      console.log(data);
       this.results = data;
-      console.log(this.results.joke.length);
       if (this.results.joke.length>150){
         this.fontChange = 'small';
       }else if (this.results.joke.length>100){
@@ -38,7 +36,6 @@ export class JokeComponent implements OnInit {
                              .set('Accept','application/json')
                              }).subscribe(data=>{
                               this.results = data;
-                              console.log(this.results.joke.length);
                               if (this.results.joke.length>150){
                                 this.fontChange = 'small';
                               }else if (this.results.joke.length>100){
