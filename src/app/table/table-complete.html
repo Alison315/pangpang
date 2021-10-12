@@ -1,0 +1,57 @@
+<div class="tablepage">
+  <div class="pangpang-table">
+  </div>
+  <div class="tables">
+    <div class="toeat">
+      <h2>What I like to eat <div class="f">fish</div><div class="s">shrimp</div><div class="b">beef</div><div class="c">chicken</div></h2>
+      <p><ngb-progressbar [showValue]="true" type="success" [value]="35" style="width: 800px;"></ngb-progressbar></p> 
+      <p><ngb-progressbar [showValue]="true" type="info" [value]="40"></ngb-progressbar></p>
+      <p><ngb-progressbar [showValue]="true" type="warning" [value]="150" [max]="200"></ngb-progressbar></p>
+      <p><ngb-progressbar [showValue]="true" type="danger" [value]="150" [max]="150"></ngb-progressbar></p>
+    </div>
+    <div class="todo">
+      <h2>Things I like to do</h2>
+      <form>
+        <div class="form-group form-inline">
+            Search: <input class="form-control ml-2" type="text" name="searchTerm" [(ngModel)]="service.searchTerm"/>
+            <span class="ml-3" *ngIf="service.loading$ | async">Loading...</span>
+        </div>
+      
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col" sortable="name" (sort)="onSort($event)">Thing</th>
+            <th scope="col" sortable="duration" (sort)="onSort($event)">Duration(hour)</th>
+            <th scope="col" sortable="rating" (sort)="onSort($event)">Rating( ✰ )</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let Thing of things$ | async">
+            <th scope="row">{{ Thing.id }}</th>
+            <td>
+              <ngb-highlight [result]="Thing.name" [term]="service.searchTerm"></ngb-highlight>
+            </td>
+            <td><ngb-highlight [result]="Thing.duration | number" [term]="service.searchTerm"></ngb-highlight></td>
+            <td><ngb-highlight [result]="Thing.rating | number" [term]="service.searchTerm"></ngb-highlight></td>
+          </tr>
+          </tbody>
+        </table>
+      
+        <div class="d-flex justify-content-between p-2">
+          <ngb-pagination
+            [collectionSize]="(total$ | async)!" [(page)]="service.page" [pageSize]="service.pageSize">
+          </ngb-pagination>
+      
+          <select class="custom-select" style="width: auto" name="pageSize" [(ngModel)]="service.pageSize">
+            <option [ngValue]="2">2 items per page</option>
+            <option [ngValue]="4">4 items per page</option>
+            <option [ngValue]="6">6 items per page</option>
+          </select>
+        </div>
+      
+      </form>
+    </div>
+  </div>
+  
+</div>

@@ -1,0 +1,148 @@
+.joke {
+  position: relative;
+  width: 800px;
+  height: 800px;
+  background: url(../../assets/joke.png) no-repeat;
+  background-size: 100%;
+}
+.joketext,
+.small,
+.medium {
+  padding-top: 50%;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-weight: 700;
+}
+.joketext {
+  font-size: 30px;
+}
+.medium {
+  font-size: 25px;
+}
+.small {
+  font-size: 20px;
+}
+
+button {
+  position: absolute;
+  margin-left: 60%;
+  bottom: 0;
+}
+.pangpang {
+  width: 600px;
+  height: 840px;
+  background: url(../../assets/pangpang.jpg) no-repeat;
+  background-size: 100%;
+}
+.wholepage {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 80%;
+}
+h2 {
+  position: absolute;
+  padding-left: 11%;
+  padding-top: 3%;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-size: 35px;
+  font-weight: bolder;
+  text-shadow: 2px 2px 2px grey;
+  -webkit-text-stroke: 1px black;
+  color: rgb(243, 224, 237);
+}
+@media (max-width: 1900px) {
+  .joke {
+    width: 800px;
+    height: 800px;
+  }
+}
+@media (max-width: 1500px) {
+  .joke {
+    width: 600px;
+    height: 600px;
+  }
+  .pangpang {
+    width: 474px;
+    height: px;
+  }
+
+  h2,
+  #joketext {
+    font-size: 25px;
+  }
+}
+@media (max-width: 1000px) {
+  .joke {
+    width: 500px;
+    height: 500px;
+  }
+  .pangpang {
+    width: 316px;
+    height: px;
+  }
+
+  h2,
+  #joketext {
+    font-size: 23px;
+  }
+}
+@media (max-width: 768px) {
+  .joke {
+    width: 300px;
+    height: 300px;
+  }
+  .pangpang {
+    width: 243px;
+    height: px;
+  }
+
+  h2,
+  #joketext {
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) {
+  .joke {
+    width: 200px;
+    height: 200px;
+  }
+
+  h2,
+  #joketext {
+    font-size: 10px;
+  }
+  .pangpang {
+    width: 182px;
+    height: px;
+  }
+}
+@media (max-width: 376px) {
+  .joke {
+    width: 100px;
+    height: 100px;
+  }
+
+  h2,
+  #joketext {
+    font-size: 8px;
+  }
+  .pangpang {
+    width: 119px;
+    height: px;
+  }
+}
+@media (max-width: 176px) {
+  .joke {
+    width: 50px;
+    height: 50px;
+  }
+
+  h2,
+  #joketext {
+    font-size: 5px;
+  }
+  .pangpang {
+    width: 56px;
+    height: px;
+  }
+}

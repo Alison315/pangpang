@@ -1,0 +1,53 @@
+.tablepage {
+  display: flex;
+}
+h2 {
+  font-family: "Comfortaa", cursive;
+  font-weight: 700;
+  text-shadow: 2px 2px 2px grey;
+  -webkit-text-stroke: 1px black;
+  color: rgb(243, 224, 237);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.todo {
+  margin-top: 7%;
+}
+.todo h2 {
+  color: rgb(224, 243, 243);
+}
+.pangpang-table {
+  width: 600px;
+  height: 840px;
+  background: url(../../assets/pangpang-table.png) no-repeat;
+  background-size: 100%;
+}
+.f,
+.s,
+.b,
+.c {
+  width: 40px;
+  height: 18px;
+  margin-right: 5px;
+  font-size: 10px;
+  color: white !important;
+  -webkit-text-stroke: 0px !important;
+  text-shadow: none !important;
+  text-align: center;
+  line-height: 18px;
+  border-radius: 15%;
+  display: inline-block;
+}
+.f {
+  background-color: rgb(40, 167, 69);
+  margin-left: 310px;
+}
+.s {
+  background-color: rgb(23, 162, 184);
+}
+.b {
+  background-color: rgb(255, 193, 7);
+}
+.c {
+  background-color: rgb(220, 53, 69);
+}
