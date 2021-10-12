@@ -33,9 +33,3 @@
 .outlets {
   padding: 50px;
 }
-
-@media (max-height: 640px) {
-  .list-items {
-    padding-top: 20px;
-  }
-}
