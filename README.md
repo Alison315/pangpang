@@ -1,6 +1,10 @@
-# MyWeb
+# Pangpang
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
+This project is about my cat Pangpang. It is an Angular SPA which includes Pangpang's self-introduction (carousel on home page), Pangpang's joke (fetch joke data from API), Pangpang's favorite food and things (demonstrated in tables using Angular services), and about author.
+
+Built user interface by bootstrap, Angular material, Google fonts, HTML, and CSS.
+
+Generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
 
 ## Development server
 
