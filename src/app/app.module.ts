@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
-import { JokeComponent } from './joke/joke.component';
+import { QuoteComponent } from './quote/quote.component';
 import { AuthorComponent } from './author/author.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbdTableCompleteModule } from './table/table-complete.module'
@@ -15,7 +15,7 @@ import { NgbdTableCompleteModule } from './table/table-complete.module'
   declarations: [
     AppComponent,
     HomeComponent,
-    JokeComponent,
+    QuoteComponent,
     AuthorComponent,
   ],
   imports: [

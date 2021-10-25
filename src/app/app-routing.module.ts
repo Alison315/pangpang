@@ -1,5 +1,5 @@
 import { AuthorComponent } from './author/author.component';
-import { JokeComponent } from './joke/joke.component';
+import { QuoteComponent } from './quote/quote.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -11,7 +11,7 @@ const routes: Routes = [];
   imports: [RouterModule.forRoot([
     {path:'',component:HomeComponent},
     {path:'home',component:HomeComponent},
-    {path:'jokes',component:JokeComponent},
+    {path:'quotes',component:QuoteComponent},
     {path:'author',component:AuthorComponent},
     {path:'table',component:NgbdTableComplete},
     

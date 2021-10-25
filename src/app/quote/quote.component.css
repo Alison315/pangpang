@@ -1,11 +1,11 @@
-.joke {
+.quote {
   position: relative;
   width: 800px;
   height: 800px;
-  background: url(../../assets/joke.png) no-repeat;
+  background: url(../../assets/quote.png) no-repeat;
   background-size: 100%;
 }
-.joketext,
+.quotetext,
 .small,
 .medium {
   padding-top: 50%;
@@ -13,7 +13,7 @@
   padding-right: 20%;
   font-weight: 700;
 }
-.joketext {
+.quotetext {
   font-size: 30px;
 }
 .medium {
