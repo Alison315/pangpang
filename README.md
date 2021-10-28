@@ -1,6 +1,6 @@
 # Pangpang
 
-This project is about my cat Pangpang. It is an Angular SPA which includes Pangpang's self-introduction (carousel on home page), Pangpang's joke (fetch joke data from API), Pangpang's favorite food and things (demonstrated in tables using Angular services), and about author.
+This project is about my cat Pangpang. It is an Angular SPA which includes Pangpang's self-introduction (carousel on home page), Pangpang's quotes (fetch inspirational quotes data from API), Pangpang's favorite food and things (demonstrated in progress bars and tables using Angular services), and about author.
 
 Built user interface by bootstrap, Angular material, Google fonts, HTML, and CSS.
 
